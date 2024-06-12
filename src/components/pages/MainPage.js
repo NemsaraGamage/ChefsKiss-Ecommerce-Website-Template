@@ -11,6 +11,10 @@ const MainPage = () => {
             {/* Nav bar */}
             <NavBarHead></NavBarHead>
 
+            <div className="introCon">
+              <h1>Chefs's Kiss</h1>
+              <p>One stop shop to all of your Culinary Desire</p>
+            </div>
             
         </div>
       </>

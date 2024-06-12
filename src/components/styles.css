@@ -2,82 +2,189 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+}
+
+@font-face {
+    font-family: 'Gwendolyn-Bold';
+    src: url(fonts/Gwendolyn-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LXGWWenKaiTC-Bold';
+    src: url(fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LXGWWenKaiTC-Light';
+    src: url(fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Light.ttf);
 }
 
 /* --------------------- navigation bar --------------------- */
 .navbar {
-    color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px;
-    padding-top: 12px;
-    background-color: #343a40; 
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #7c9d45;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffc107; 
-    margin-right: auto;
+.navbar-logo {
+    flex-shrink: 0;
 }
 
-.navbar .nav-links {
+.navbar .logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
     display: flex;
     flex-grow: 1;
-    justify-content: center;
-    position: relative;
+    justify-content: left;
+    margin-left: 2%;
+    margin-top: 12px;
 }
 
-.navbar .nav-link, .a {
-    margin: 0 20px; 
+.nav-link {
+    margin: 0 20px;
     text-decoration: none;
-    color: #f8f9fa; 
+    color: #fff;
     font-size: 18px;
-    transition: color 0.3s ease, font-weight 0.3s ease; 
+    transition: color 0.5s ease, font-weight 0.3s ease;
     position: relative;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
 }
 
-.navbar .nav-link:hover {
-    color: #ffc107;
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
     font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.genre-dropdown {
-    position: relative;
+.auth-buttons {
+    display: flex;
+    align-items: center;
 }
 
-.genre-dropdown:hover .dropdown-menu {
-    display: grid;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: ghostwhite;
-    color: #000;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
+.auth-button {
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #7c9d45;
+    background-color: #fff;
     font-weight: 500;
 }
 
-.dropdown-item {
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
+.auth-button.login {
+    background-color: #fff;
 }
 
-.dropdown-item:hover {
-    background-color: #f0f0f0;
+.auth-button.signup {
+    background-color: #fff;
+    color: #7c9d45;
+}
+
+.auth-button.signup:hover,
+.auth-button.signup:focus {
+    background-color: #7c9d45;
+    color: #fff;
+}
+
+.auth-button:hover,
+.auth-button:focus {
+    border: 2px solid #fff;
+}
+
+/*--------------------- Main page ---------------------*/
+
+.introCon{
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.introCon p{
+    font-size: 39px;
+    font-weight: 600;
+    font-family: Gwendolyn-Bold;
+}
+
+.introCon h1{
+    font-size: 120px;
+    font-family: Gwendolyn-Bold;
+    color: #7c9d45;
+}
+
+/*--------------------- Responsive ---------------------*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .auth-button {
+        margin: 5px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* main page */
+    .introCon h1{
+        font-size: 100px;
+        
+    }
+    
+    .introCon p{
+        font-size: 40px;
+        
+    }
+}
+
+@media (max-width: 590px) {
+
+    /* main page */
+    .introCon h1{
+        font-size: 90px;
+        
+    }
+    
+    .introCon p{
+        font-size: 32px;
+        
+    }
+
 }
