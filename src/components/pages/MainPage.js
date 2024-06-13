@@ -6,8 +6,20 @@ import ch2 from "../pics/choice/ready-to-cook.webp"
 import ch3 from "../pics/choice/desserts.webp"
 import ch4 from "../pics/choice/prepped-and-ready-tile.webp"
 import ch5 from "../pics/choice/breakfast.webp"
+import ch6 from "../pics/choice/fast-and-easy.webp"
 import temp1 from "../pics/templates/1.jpg"
 import op1 from "../pics/options/1.webp"
+import op2 from "../pics/options/2.webp"
+import op3 from "../pics/options/3.webp"
+import op4 from "../pics/options/4.webp"
+import op5 from "../pics/options/5.webp"
+import op6 from "../pics/options/6.webp"
+import op7 from "../pics/options/7.webp"
+import op8 from "../pics/options/8.webp"
+import op9 from "../pics/options/9.webp"
+import op10 from "../pics/options/10.webp"
+
+import Footer from "../Footer"
 
 const MainPage = () => { 
 
@@ -38,91 +50,114 @@ const MainPage = () => {
 
             {/* choices */}
             <div className="choiceIntro">
-              <p>Your Pick</p>
+              <p>Take Your Pick</p>
             </div>
 
             <div class="choicesCon">
               <div class="choiceCard">
-                <img src={ch1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={ch1} alt="Pasta Goodness"></img>
+                <p class="title">Pasta Goodness</p>
               </div>
 
               <div class="choiceCard">
-                <img src={ch2} alt="Mafalda Pasta"></img>
-                <p class="title">Pesto Chicken and Orzo</p>
-                <p class="subtitle">Ready To Cook</p>
+                <img src={ch2} alt="Ready To Cook"></img>
+                <p class="title">Ready To Cook</p>
               </div>
 
               <div class="choiceCard">
-                <img src={ch3} alt="Mafalda Pasta"></img>
-                <p class="title">Flourless Chocolate Cake</p>
-                <p class="subtitle">Desserts</p>
+                <img src={ch3} alt="Desserts"></img>
+                <p class="title">Desserts</p>
               </div>
 
               <div class="choiceCard">
-                <img src={ch4} alt="Mafalda Pasta"></img>
-                <p class="title">Chicken Parmesan</p>
-                <p class="subtitle">Prepped and Ready</p>
+                <img src={ch4} alt="Prepped and Ready"></img>
+                <p class="title">Prepped and Ready</p>
               </div>
 
               <div class="choiceCard">
-                <img src={ch5} alt="Mafalda Pasta"></img>
-                <p class="title">Fried Egg & Bacon</p>
-                <p class="subtitle">Breakfast</p>
+                <img src={ch5} alt="Breakfast"></img>
+                <p class="title">Breakfast</p>
+              </div>
+
+              <div class="choiceCard">
+                <img src={ch6} alt="FAST & EASY"></img>
+                <p class="title">Fast & Easy</p>
               </div>
             </div>
 
             {/* Options */}
             <div className="optionIntro">
-              <p>More than 50+ Options</p>
+              <p>More than 50+ Dishes</p>
             </div>
 
             <div class="optionCon">
 
               <div class="optionCard">
                 <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <p class="title">Honey Mustard Pork Chops & Brussels Sprouts</p>
+                <p class="subtitle">with Sautéed Apple & Kale</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op2} alt="Mafalda Pasta"></img>
+                <p class="title">Seared Steaks & Soy Glaze</p>
+                <p class="subtitle">with Mashed Potatoes & Togarashi Vegetables</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op3} alt="Mafalda Pasta"></img>
+                <p class="title">Spicy Shrimp Lo Mein</p>
+                <p class="subtitle">with Carrots & Bok Choy</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op4} alt="Mafalda Pasta"></img>
+                <p class="title">Pesto Gnocchi & Hot Italian Sausage</p>
+                <p class="subtitle">with Mushrooms & Mozzarella</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op5} alt="Mafalda Pasta"></img>
+                <p class="title">Chicken, Peach & Kale Salad</p>
+                <p class="subtitle">with Sesame-Dijon Dressing</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op6} alt="Mafalda Pasta"></img>
+                <p class="title">Sweet Pepper Grilled Cheese</p>
+                <p class="subtitle">with Romaine & Peach Salad</p>
               </div>
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
-                <p class="title">Mafalda Pasta</p>
-                <p class="subtitle">Pasta Goodness</p>
+                <img src={op7} alt="Mafalda Pasta"></img>
+                <p class="title">BLT Dry-Aged Beef Cheeseburgers</p>
+                <p class="subtitle">with Garlic & Herb Corn on the Cob</p>
               </div>
-              
+
+              <div class="optionCard">
+                <img src={op8} alt="Mafalda Pasta"></img>
+                <p class="title">Crispy Korean-Style Chicken</p>
+                <p class="subtitle">with Rice, Kimchi & Sesame Seeds</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op9} alt="Mafalda Pasta"></img>
+                <p class="title">Italian Chicken & Pepper Pan Sauce</p>
+                <p class="subtitle">with Mashed Potatoes & Green Beans</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op10} alt="Mafalda Pasta"></img>
+                <p class="title">Beef Enchiladas Rojas</p>
+                <p class="subtitle">with Poblano Pepper & Cheese</p>
+              </div>
             </div>
+
+            <div className="optionButton">
+              <button>More on The Menu</button>
+            </div>
+
+            <Footer></Footer>
             
         </div>
       </>

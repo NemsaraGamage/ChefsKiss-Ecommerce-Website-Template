@@ -62,7 +62,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    transition: color 0.5s ease, font-weight 0.3s ease;
+    transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
     position: relative;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
@@ -70,9 +70,9 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #fff;
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Increase text shadow for better visibility */
+    transform: scale(1.1); /* Slightly enlarge the text on hover/focus */
 }
 
 .auth-buttons {
@@ -197,8 +197,8 @@
     width: 30%;
     border-bottom: 2px solid #7c9d45;
     margin: 0 auto;
-    margin-top: 55px;
-    margin-bottom: 45px;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .choiceIntro p{
@@ -225,7 +225,7 @@
     margin: 10px; /* Add margin for spacing between cards */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column; /* Arrange children in a column */
     cursor: pointer;
@@ -244,37 +244,29 @@
     font-family: PTSansNarrow-Bold;
 }
 
-.choiceCard .subtitle {
-    font-size: 1.0em;
-    color: black;
-    margin: 0;
-    font-family: oswald;
-    margin-top: auto; /* Push the subtitle to the bottom */
-}
-
 .choiceCard:hover {
     transform: translateY(-1px); /* Move card up on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /*---------  */
 .optionIntro{
     width: 100%;
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 70px;
     margin-bottom: 45px;
 }
 
 .optionIntro p{
     text-align: center;
     font-family: BebasNeue-Regular;
-    font-size: 40px;
+    font-size: 50px;
     color: #7c9d45;
 }
 
 .optionCon {
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 12px 0 12px;
     margin-top: 14px;
     margin-bottom: 20px;
     display: grid;
@@ -304,6 +296,11 @@
     margin: 10px 0 10px;
     color: black;
     font-family: PTSansNarrow-Bold;
+    transition: color 0.3s ease; 
+}
+
+.optionCard .title:hover {
+    color: #7c9d45;
 }
 
 .optionCard .subtitle {
@@ -314,6 +311,90 @@
     margin-top: auto; 
     padding-bottom: 12px;
 }
+
+.optionButton {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically (if the container has a height) */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.optionButton button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: PTSansNarrow-Bold;
+    background: linear-gradient(135deg, #7c9d45, #92b357); /* Gradient background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.optionButton button:hover {
+    color: black;
+    background: linear-gradient(135deg, #92b357, #7c9d45); /* Inverse gradient */
+    border: 1px solid #7c9d45;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* --------------------- footer --------------------- */
+
+.footer {
+    background-color: #7c9d45;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: -10%;
+    margin-top: 80px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #ffc107; 
+  }
 
 /*--------------------- Responsive ---------------------*/
 
@@ -406,6 +487,11 @@
     
     .tempContent button {  
         font-size: 15px;
+    }
+
+    .optionCard{
+        width: 380px;
+        margin: 0 auto;
     }
 
 }
