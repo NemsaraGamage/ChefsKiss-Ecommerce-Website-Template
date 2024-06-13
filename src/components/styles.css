@@ -20,6 +20,16 @@
     src: url(fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Light.ttf);
 }
 
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PTSansNarrow-Bold';
+    src: url(fonts/PTSansNarrow-Bold.ttf);
+}
+
 /* --------------------- navigation bar --------------------- */
 .navbar {
     display: flex;
@@ -106,19 +116,159 @@
 
 .introCon{
     width: 100%;
-    margin-top: 70px;
+    margin-top: 26px;
     text-align: center;
 }
 
+.introCon h1{
+    font-size: 140px;
+    font-family: Gwendolyn-Bold;
+    color: #7c9d45;
+}
+
 .introCon p{
-    font-size: 39px;
+    font-size: 42px;
     font-weight: 600;
     font-family: Gwendolyn-Bold;
 }
 
-.introCon h1{
-    font-size: 120px;
-    font-family: Gwendolyn-Bold;
+.tempCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+  
+.tempContent {
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.tempContent p:nth-of-type(1){
+    font-size: 30px;
+    font-family: BebasNeue-Regular;
+    margin-bottom: 15px;
+}
+
+.tempContent p:nth-of-type(2){
+    font-size: 22px;
+    font-family: PTSansNarrow-Bold;
+    color: #7c9d45;
+}
+
+.tempContent button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: PTSansNarrow-Bold;
+    background-color: #7c9d45;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tempContent button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #7c9d45;
+}
+
+.tempImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.tempImage img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ----- */
+
+.choiceIntro{
+    width: 30%;
+    border-bottom: 2px solid #7c9d45;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+.choiceIntro p{
+    text-align: center;
+    font-family: BebasNeue-Regular;
+    font-size: 40px;
+}
+
+.choicesCon {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around; /* Spread the cards evenly */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.choiceCard {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for responsiveness */
+    margin: 10px; /* Add margin for spacing between cards */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    cursor: pointer;
+}
+
+.choiceCard img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.choiceCard .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0 10px;
+    color: black;
+    font-family: PTSansNarrow-Bold;
+}
+
+.choiceCard .subtitle {
+    font-size: 1.0em;
+    color: black;
+    margin: 0;
+    font-family: oswald;
+    margin-top: auto; /* Push the subtitle to the bottom */
+}
+
+.choiceCard:hover {
+    transform: translateY(-1px); /* Move card up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/*---------  */
+.optionIntro{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+.optionIntro p{
+    text-align: center;
+    font-family: BebasNeue-Regular;
+    font-size: 40px;
     color: #7c9d45;
 }
 
@@ -164,13 +314,34 @@
 
     /* main page */
     .introCon h1{
-        font-size: 100px;
-        
+        font-size: 100px;  
     }
     
     .introCon p{
-        font-size: 40px;
-        
+        font-size: 40px;   
+    }
+
+    .tempCon {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    
+    .image {
+        justify-content: center;
+    }
+
+    .tempImage img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .tempImage img {
+        max-width: 100%;
     }
 }
 
@@ -178,13 +349,19 @@
 
     /* main page */
     .introCon h1{
-        font-size: 90px;
-        
+        font-size: 90px; 
     }
     
     .introCon p{
-        font-size: 32px;
-        
+        font-size: 31.2px; 
+    }
+
+    .tempContent p:nth-of-type(2){
+        font-size: 19.8px;
+    }
+    
+    .tempContent button {  
+        font-size: 15px;
     }
 
 }
