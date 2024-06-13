@@ -7,6 +7,7 @@ import ch3 from "../pics/choice/desserts.webp"
 import ch4 from "../pics/choice/prepped-and-ready-tile.webp"
 import ch5 from "../pics/choice/breakfast.webp"
 import temp1 from "../pics/templates/1.jpg"
+import op1 from "../pics/options/1.webp"
 
 const MainPage = () => { 
 
@@ -40,44 +41,87 @@ const MainPage = () => {
               <p>Your Pick</p>
             </div>
 
-            <div className="choicesCon">
+            <div class="choicesCon">
+              <div class="choiceCard">
+                <img src={ch1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
 
-              <div class="choicesCon">
-                <div class="choiceCard">
-                  <img src={ch1} alt="Mafalda Pasta"></img>
-                  <p class="title">Mafalda Pasta</p>
-                  <p class="subtitle">Pasta Goodness</p>
-                </div>
+              <div class="choiceCard">
+                <img src={ch2} alt="Mafalda Pasta"></img>
+                <p class="title">Pesto Chicken and Orzo</p>
+                <p class="subtitle">Ready To Cook</p>
+              </div>
 
-                <div class="choiceCard">
-                  <img src={ch2} alt="Mafalda Pasta"></img>
-                  <p class="title">Pesto Chicken and Orzo</p>
-                  <p class="subtitle">Ready To Cook</p>
-                </div>
+              <div class="choiceCard">
+                <img src={ch3} alt="Mafalda Pasta"></img>
+                <p class="title">Flourless Chocolate Cake</p>
+                <p class="subtitle">Desserts</p>
+              </div>
 
-                <div class="choiceCard">
-                  <img src={ch3} alt="Mafalda Pasta"></img>
-                  <p class="title">Flourless Chocolate Cake</p>
-                  <p class="subtitle">Desserts</p>
-                </div>
+              <div class="choiceCard">
+                <img src={ch4} alt="Mafalda Pasta"></img>
+                <p class="title">Chicken Parmesan</p>
+                <p class="subtitle">Prepped and Ready</p>
+              </div>
 
-                <div class="choiceCard">
-                  <img src={ch4} alt="Mafalda Pasta"></img>
-                  <p class="title">Chicken Parmesan</p>
-                  <p class="subtitle">Prepped and Ready</p>
-                </div>
-
-                <div class="choiceCard">
-                  <img src={ch5} alt="Mafalda Pasta"></img>
-                  <p class="title">Fried Egg & Bacon</p>
-                  <p class="subtitle">Breakfast</p>
-                </div>
+              <div class="choiceCard">
+                <img src={ch5} alt="Mafalda Pasta"></img>
+                <p class="title">Fried Egg & Bacon</p>
+                <p class="subtitle">Breakfast</p>
               </div>
             </div>
 
             {/* Options */}
             <div className="optionIntro">
               <p>More than 50+ Options</p>
+            </div>
+
+            <div class="optionCon">
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+
+              <div class="optionCard">
+                <img src={op1} alt="Mafalda Pasta"></img>
+                <p class="title">Mafalda Pasta</p>
+                <p class="subtitle">Pasta Goodness</p>
+              </div>
+              
             </div>
             
         </div>
