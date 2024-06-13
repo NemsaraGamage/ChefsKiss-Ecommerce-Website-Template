@@ -194,7 +194,7 @@
 /* ----- */
 
 .choiceIntro{
-    width: 30%;
+    width: 40%;
     border-bottom: 2px solid #7c9d45;
     margin: 0 auto;
     margin-top: 70px;
@@ -254,13 +254,13 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 70px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .optionIntro p{
     text-align: center;
     font-family: BebasNeue-Regular;
-    font-size: 50px;
+    font-size: 60px;
     color: #7c9d45;
 }
 
@@ -326,7 +326,8 @@
     padding: 10px 20px;
     font-size: 18px;
     font-family: PTSansNarrow-Bold;
-    background: linear-gradient(135deg, #7c9d45, #92b357); /* Gradient background */
+    background-color: black;
+    /* background: linear-gradient(135deg, #7c9d45, #92b357);  */
     color: white;
     border: none;
     cursor: pointer;
@@ -341,6 +342,29 @@
     border: 1px solid #7c9d45;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
     transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* ------- */
+
+.posterCon {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.posterCon div {
+    max-width: 480px;
+    flex: 1 1 200px; 
+    margin: 10px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.posterCon img  {
+    width: 100%;
 }
 
 /* --------------------- footer --------------------- */
@@ -468,6 +492,7 @@
     .tempImage img {
         max-width: 100%;
     }
+
 }
 
 @media (max-width: 590px) {

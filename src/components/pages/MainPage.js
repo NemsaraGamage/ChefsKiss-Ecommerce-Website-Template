@@ -18,7 +18,8 @@ import op7 from "../pics/options/7.webp"
 import op8 from "../pics/options/8.webp"
 import op9 from "../pics/options/9.webp"
 import op10 from "../pics/options/10.webp"
-
+import pos1 from "../pics/poster/p1.jpg"
+import pos2 from "../pics/poster/p2.jpg"
 import Footer from "../Footer"
 
 const MainPage = () => { 
@@ -157,6 +158,22 @@ const MainPage = () => {
               <button>More on The Menu</button>
             </div>
 
+            {/* Poster */}
+            <div className="optionIntro">
+              <p>Special Offers Weekly</p>
+            </div>
+
+            <div className="posterCon">
+              <div>
+                <img src={pos1} alt="Poster 1" />
+              </div>
+              <div>
+                <img src={pos2} alt="Poster 2" />
+              </div>
+            </div>
+
+
+            {/* Footer */}
             <Footer></Footer>
             
         </div>
