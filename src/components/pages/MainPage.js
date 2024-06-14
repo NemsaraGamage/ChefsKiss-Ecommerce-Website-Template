@@ -20,7 +20,11 @@ import op9 from "../pics/options/9.webp"
 import op10 from "../pics/options/10.webp"
 import pos1 from "../pics/poster/p1.jpg"
 import pos2 from "../pics/poster/p2.jpg"
+import carl1 from "../pics/carsoul/1.webp"
+import carl2 from "../pics/carsoul/2.webp"
+import carl3 from "../pics/carsoul/3.webp"
 import Footer from "../Footer"
+import chefLogo from '../pics/logo2.png';
 
 const MainPage = () => { 
 
@@ -33,10 +37,11 @@ const MainPage = () => {
 
             {/* Intro */}
             <div className="introCon">
+              <img src={chefLogo}></img>
               <h1>Chefs's Kiss</h1>
               <p>One stop shop to all of your Culinary Desire</p>
             </div>
-
+           
             {/* Temp */}
             <div className="tempCon">
               <div className="tempImage">
@@ -176,6 +181,16 @@ const MainPage = () => {
             <div className="satisCon">
               <h1>Delivery</h1>
               <p>Quick &#9733; Simple &#9733; Delicious</p>
+            </div>
+
+            {/* Newsletter */}
+            <div className="newsCon">
+              <h3>Join Our Newsletter!</h3>
+              <p>Subscribe to our newsletter to stay updated on the latest news and offers!</p>
+              <form className="newsletterForm">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </form>
             </div>
 
             {/* Footer */}
