@@ -172,6 +172,11 @@ const MainPage = () => {
               </div>
             </div>
 
+            {/* satisfaction Delivery */}
+            <div className="satisCon">
+              <h1>Delivery</h1>
+              <p>Quick &#9733; Simple &#9733; Delicious</p>
+            </div>
 
             {/* Footer */}
             <Footer></Footer>
