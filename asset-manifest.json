@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ChefsKiss-Ecommerce-Website-Template/static/css/main.73cea7b4.css",
-    "main.js": "/ChefsKiss-Ecommerce-Website-Template/static/js/main.2e4c3274.js",
+    "main.js": "/ChefsKiss-Ecommerce-Website-Template/static/js/main.6661e47d.js",
     "static/js/453.089f9d13.chunk.js": "/ChefsKiss-Ecommerce-Website-Template/static/js/453.089f9d13.chunk.js",
     "static/media/LXGWWenKaiTC-Light.ttf": "/ChefsKiss-Ecommerce-Website-Template/static/media/LXGWWenKaiTC-Light.bc51b87e30243b87a219.ttf",
     "static/media/LXGWWenKaiTC-Bold.ttf": "/ChefsKiss-Ecommerce-Website-Template/static/media/LXGWWenKaiTC-Bold.0b967a27d0336643fac5.ttf",
@@ -29,11 +29,11 @@
     "static/media/breakfast.webp": "/ChefsKiss-Ecommerce-Website-Template/static/media/breakfast.5e9630f2b1075630688f.webp",
     "index.html": "/ChefsKiss-Ecommerce-Website-Template/index.html",
     "main.73cea7b4.css.map": "/ChefsKiss-Ecommerce-Website-Template/static/css/main.73cea7b4.css.map",
-    "main.2e4c3274.js.map": "/ChefsKiss-Ecommerce-Website-Template/static/js/main.2e4c3274.js.map",
+    "main.6661e47d.js.map": "/ChefsKiss-Ecommerce-Website-Template/static/js/main.6661e47d.js.map",
     "453.089f9d13.chunk.js.map": "/ChefsKiss-Ecommerce-Website-Template/static/js/453.089f9d13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73cea7b4.css",
-    "static/js/main.2e4c3274.js"
+    "static/js/main.6661e47d.js"
   ]
 }
