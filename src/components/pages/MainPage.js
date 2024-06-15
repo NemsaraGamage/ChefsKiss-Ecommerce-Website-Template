@@ -25,8 +25,16 @@ import carl2 from "../pics/carsoul/2.webp"
 import carl3 from "../pics/carsoul/3.webp"
 import Footer from "../Footer"
 import chefLogo from '../pics/logo2.png';
+import menuPage from './Menu'
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => { 
+
+  const navigate = useNavigate();
+
+  const menuPage = () => {
+    navigate('/menu'); 
+  };
 
     return (
       <>
@@ -99,73 +107,73 @@ const MainPage = () => {
             <div class="optionCon">
 
               <div class="optionCard">
-                <img src={op1} alt="Mafalda Pasta"></img>
+                <img src={op1} alt="option img"></img>
                 <p class="title">Honey Mustard Pork Chops & Brussels Sprouts</p>
                 <p class="subtitle">with Sautéed Apple & Kale</p>
               </div>
 
               <div class="optionCard">
-                <img src={op2} alt="Mafalda Pasta"></img>
+                <img src={op2} alt="option img"></img>
                 <p class="title">Seared Steaks & Soy Glaze</p>
                 <p class="subtitle">with Mashed Potatoes & Togarashi Vegetables</p>
               </div>
 
               <div class="optionCard">
-                <img src={op3} alt="Mafalda Pasta"></img>
+                <img src={op3} alt="option img"></img>
                 <p class="title">Spicy Shrimp Lo Mein</p>
                 <p class="subtitle">with Carrots & Bok Choy</p>
               </div>
 
               <div class="optionCard">
-                <img src={op4} alt="Mafalda Pasta"></img>
+                <img src={op4} alt="option img"></img>
                 <p class="title">Pesto Gnocchi & Hot Italian Sausage</p>
                 <p class="subtitle">with Mushrooms & Mozzarella</p>
               </div>
 
               <div class="optionCard">
-                <img src={op5} alt="Mafalda Pasta"></img>
+                <img src={op5} alt="option img"></img>
                 <p class="title">Chicken, Peach & Kale Salad</p>
                 <p class="subtitle">with Sesame-Dijon Dressing</p>
               </div>
 
               <div class="optionCard">
-                <img src={op6} alt="Mafalda Pasta"></img>
+                <img src={op6} alt="option img"></img>
                 <p class="title">Sweet Pepper Grilled Cheese</p>
                 <p class="subtitle">with Romaine & Peach Salad</p>
               </div>
 
               <div class="optionCard">
-                <img src={op7} alt="Mafalda Pasta"></img>
+                <img src={op7} alt="option img"></img>
                 <p class="title">BLT Dry-Aged Beef Cheeseburgers</p>
                 <p class="subtitle">with Garlic & Herb Corn on the Cob</p>
               </div>
 
               <div class="optionCard">
-                <img src={op8} alt="Mafalda Pasta"></img>
+                <img src={op8} alt="option img"></img>
                 <p class="title">Crispy Korean-Style Chicken</p>
                 <p class="subtitle">with Rice, Kimchi & Sesame Seeds</p>
               </div>
 
               <div class="optionCard">
-                <img src={op9} alt="Mafalda Pasta"></img>
+                <img src={op9} alt="option img"></img>
                 <p class="title">Italian Chicken & Pepper Pan Sauce</p>
                 <p class="subtitle">with Mashed Potatoes & Green Beans</p>
               </div>
 
               <div class="optionCard">
-                <img src={op10} alt="Mafalda Pasta"></img>
+                <img src={op10} alt="option img"></img>
                 <p class="title">Beef Enchiladas Rojas</p>
                 <p class="subtitle">with Poblano Pepper & Cheese</p>
               </div>
             </div>
 
             <div className="optionButton">
-              <button>More on The Menu</button>
+            <button onClick={menuPage}>More on The Menu</button>
             </div>
 
             {/* Poster */}
             <div className="optionIntro">
-              <p>Special Offers Weekly</p>
+              <p>Special Weekly Offers</p>
             </div>
 
             <div className="posterCon">

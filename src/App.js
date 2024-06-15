@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/pages/MainPage';
+import Menu from './components/pages/Menu';
 
 // npm run deploy
 
@@ -13,11 +14,9 @@ const RouteConfig = () => {
         <Route index element={<MainPage />} />
         <Route path='/MovieBlocks-Ecommerce-Website-Template' element={<MainPage />} />
        
-        {/* <Route path="/comedy" element={<ComedyPage />} />
+       {/* Menu Page */}
+        <Route path="/menu" element={<Menu></Menu>} />
 
-        <Route path="/tvshow" element={<TvShowSecPage />} />
-
-        <Route path="/toppicks" element={<TopPicks />} /> */}
       </Routes>
     </Router>
   );
