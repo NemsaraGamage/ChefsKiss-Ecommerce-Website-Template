@@ -20,12 +20,8 @@ import op9 from "../pics/options/9.webp"
 import op10 from "../pics/options/10.webp"
 import pos1 from "../pics/poster/p1.jpg"
 import pos2 from "../pics/poster/p2.jpg"
-import carl1 from "../pics/carsoul/1.webp"
-import carl2 from "../pics/carsoul/2.webp"
-import carl3 from "../pics/carsoul/3.webp"
 import Footer from "../Footer"
 import chefLogo from '../pics/logo2.png';
-import menuPage from './Menu'
 import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => { 
@@ -168,7 +164,7 @@ const MainPage = () => {
             </div>
 
             <div className="optionButton">
-            <button onClick={menuPage}>More on The Menu</button>
+              <button onClick={menuPage}>More on The Menu</button>
             </div>
 
             {/* Poster */}

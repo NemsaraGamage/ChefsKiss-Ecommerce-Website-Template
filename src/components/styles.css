@@ -493,6 +493,69 @@
     font-size: 25px; 
 }
 
+/* --------------------- Plan --------------------- */
+
+.planCon{
+    width: 40%;
+    border-bottom: 2px solid #7c9d45;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.planCon p{
+    text-align: center;
+    font-family: BebasNeue-Regular;
+    font-size: 50px;
+}
+
+.plansCon {
+    width: 100%;
+}
+
+.innerPlanCon{
+    width: 550px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.card {
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planImage {
+    width: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.planPrice {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: BebasNeue-Regular;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #7c9d45;
+    letter-spacing: 0.05em;
+}
+
+.planDes{
+    margin-left: 5px;
+    font-size: 18px;
+    font-family: 'LXGWWenKaiTC-Bold';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
 /* --------------------- footer --------------------- */
 
 .footer {
@@ -631,9 +694,14 @@
         font-size: 48px;
     }
     
-    .menuCon{
+    .menuCon, .planCon{
         width: 80%;
     }
+
+    .innerPlanCon{
+        width: 480px;
+    }
+    
 
 }
 

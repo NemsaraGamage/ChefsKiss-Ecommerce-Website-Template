@@ -22,8 +22,15 @@ import m7 from "../pics/menu/7.webp"
 import m8 from "../pics/menu/8.webp"
 import m9 from "../pics/menu/9.webp"
 import m10 from "../pics/menu/10.webp"
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => { 
+
+    const navigate = useNavigate();
+
+    const planPage = () => {
+        navigate('/plan'); 
+    };
 
     return (
         <>
@@ -167,7 +174,7 @@ const Menu = () => {
             </div>
             
             <div className="optionButton">
-              <button>Check Available Plans</button>
+              <button onClick={planPage}>Check Available Plans</button>
             </div>
 
             {/* Footer */}
