@@ -13,7 +13,7 @@ const RouteConfig = () => {
       <Routes>
         {/* Mainpage routes */}
         <Route index element={<MainPage />} />
-        <Route path='/MovieBlocks-Ecommerce-Website-Template' element={<MainPage />} />
+        <Route path='/ChefsKiss-Ecommerce-Website-Template' element={<MainPage />} />
        
        {/* Menu Page */}
         <Route path="/menu" element={<Menu></Menu>} />
