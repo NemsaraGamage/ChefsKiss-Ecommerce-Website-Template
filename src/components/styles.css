@@ -147,7 +147,7 @@
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 70px;
 }
   
 .tempContent {
@@ -201,7 +201,7 @@
 /* ----- */
 
 .choiceIntro{
-    width: 40%;
+    width: 90%;
     border-bottom: 2px solid #7c9d45;
     margin: 0 auto;
     margin-top: 70px;
@@ -215,7 +215,8 @@
 }
 
 .choicesCon{
-    width: 99%;
+    width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
     margin-top: 14px;
     margin-bottom: 20px;
@@ -256,7 +257,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-/*---------  */
+/* options  */
+
 .optionIntro{
     width: 100%;
     margin: 0 auto;
@@ -272,6 +274,7 @@
 }
 
 .optionCon {
+    max-width: 1500px;
     width: 100%;
     padding: 0 12px 0 12px;
     margin-top: 14px;
@@ -375,7 +378,7 @@
     width: 100%;
 }
 
-/* ------------ */
+/* satisfaction Delivery */
 
 .satisCon{
     width: 100%;
@@ -397,10 +400,12 @@
     color: #9FB433;
 }
 
-/* --------------- */
+/* newsletter */
 
 .newsCon {
     width: 100%;
+    max-width: 152 0px;
+    margin: 0 auto;
     margin-top: 60px;
     padding: 20px;
     text-align: center;
@@ -734,6 +739,168 @@
         font-family: PTSansNarrow-Bold;
         font-size: 45px;
         color: #9FB433;
+    }
+
+}
+
+/* mobile */
+
+/* ip 14 */
+@media (max-width: 431px) {
+
+     /* intro */
+
+     .introCon h1{
+        font-size: 88px;
+    }
+
+    .introCon img{
+        width: 200px;
+    }
+
+    /* Template */
+
+    .tempCon {
+        margin-top: 65px;
+    }
+
+    .tempImage img {
+        max-width: 100%;
+    }
+
+    /* options */
+
+    .optionIntro p{
+        font-size: 45px;
+    }
+
+    /* satisfaction Delivery */
+
+    .satisCon h1{
+        font-size: 47px;
+    }
+    
+    .satisCon p{
+        font-size: 33px;
+    }
+
+}
+
+/* s24 */
+@media (max-width: 413px) {
+
+    /* intro */
+
+    .introCon img{
+        width: 200px;
+    }
+
+    /* Template */
+
+    .tempCon {
+        margin-top: 65px;
+    }
+
+    .tempImage img {
+        max-width: 100%;
+    }
+
+    /* options */
+
+    .optionIntro p{
+        font-size: 50px;
+    }
+
+    /* satisfaction Delivery */
+
+    .satisCon h1{
+        font-size: 50px;
+    }
+    
+    .satisCon p{
+        font-size: 38px;
+    }
+    
+}
+
+/* ip 13pro */
+@media (max-width: 391px) {
+
+     /* intro */
+
+    .introCon h1{
+        font-size: 88px;
+    }
+
+    .introCon img{
+        width: 200px;
+    }
+
+    /* Template */
+
+    .tempCon {
+        margin-top: 65px;
+    }
+
+    .tempImage img {
+        max-width: 100%;
+    }
+
+    /* options */
+
+    .optionIntro p{
+        font-size: 45px;
+    }
+
+    /* satisfaction Delivery */
+
+    .satisCon h1{
+        font-size: 47px;
+    }
+    
+    .satisCon p{
+        font-size: 33px;
+    }
+    
+}
+
+/* s24 ultra */
+@media (max-width: 361px) {
+
+    /* intro */
+
+    .introCon h1{
+        font-size: 81px;
+    }
+
+    .introCon img{
+        width: 200px;
+    }
+
+    /* Template */
+
+    .tempCon {
+        margin-top: 65px;
+    }
+
+    .tempImage img {
+        max-width: 100%;
+    }
+
+    /* options */
+
+    .optionIntro p{
+        font-size: 45px;
+    }
+
+    /* satisfaction Delivery */
+
+    .satisCon h1{
+        font-size: 47px;
+    }
+    
+    .satisCon p{
+        font-size: 33px;
     }
 
 }
